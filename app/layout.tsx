@@ -1,13 +1,12 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
 import { InnerAnimalHelper } from '@/components/InnerAnimalHelper'
-
-const inter = Inter({ subsets: ['latin'] })
+import Navbar from '@/components/Navbar'
+import ThemeProvider from '@/components/ThemeProvider'
 
 export const metadata: Metadata = {
-  title: 'Inner Animal Platform - Your Unified Integration Hub',
-  description: 'Access all integrations and services in one place. Inner Animal Platform connects you to Vercel, Stripe, Resend, Cloudflare, Supabase, and more.',
+  title: 'Meauxbility Platform',
+  description: 'Mobility grants and programs platform',
 }
 
 export default function RootLayout({
@@ -17,9 +16,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        {children}
-        <InnerAnimalHelper />
+      <body style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
+        <ThemeProvider>
+          <Navbar />
+          {children}
+          <InnerAnimalHelper />
+        </ThemeProvider>
       </body>
     </html>
   )
