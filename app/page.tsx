@@ -1,26 +1,74 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-inner-animal-dark via-gray-900 to-inner-animal-dark">
+    <main className="min-h-screen" style={{ background: 'var(--bg-primary)' }}>
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-6xl font-bold text-white mb-6">
-            🦁 Inner Animal Platform
+          <h1 
+            className="text-6xl font-bold mb-6"
+            style={{ color: 'var(--text-primary)' }}
+          >
+            🦁 Meauxbility Platform
           </h1>
-          <p className="text-xl text-gray-300 mb-8">
-            Your unified integration hub for all services and tools
+          <p 
+            className="text-xl mb-8"
+            style={{ color: 'var(--text-secondary)' }}
+          >
+            Your unified platform for mobility grants and programs
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-            <div className="bg-white/5 backdrop-blur-xl rounded-xl p-6 border border-white/10">
-              <h3 className="text-xl font-semibold text-white mb-2">Integrations</h3>
-              <p className="text-gray-400">Access all your services in one place</p>
+            <div 
+              className="rounded-xl p-6"
+              style={{
+                background: 'var(--bg-card)',
+                border: '1px solid var(--border-subtle)',
+                boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+              }}
+            >
+              <h3 
+                className="text-xl font-semibold mb-2"
+                style={{ color: 'var(--text-primary)' }}
+              >
+                Grants
+              </h3>
+              <p style={{ color: 'var(--text-secondary)' }}>
+                Access mobility grants and programs
+              </p>
             </div>
-            <div className="bg-white/5 backdrop-blur-xl rounded-xl p-6 border border-white/10">
-              <h3 className="text-xl font-semibold text-white mb-2">Production Apps</h3>
-              <p className="text-gray-400">Monitor all your deployed applications</p>
+            <div 
+              className="rounded-xl p-6"
+              style={{
+                background: 'var(--bg-card)',
+                border: '1px solid var(--border-subtle)',
+                boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+              }}
+            >
+              <h3 
+                className="text-xl font-semibold mb-2"
+                style={{ color: 'var(--text-primary)' }}
+              >
+                Community
+              </h3>
+              <p style={{ color: 'var(--text-secondary)' }}>
+                Connect with others in the community
+              </p>
             </div>
-            <div className="bg-white/5 backdrop-blur-xl rounded-xl p-6 border border-white/10">
-              <h3 className="text-xl font-semibold text-white mb-2">Subscriptions</h3>
-              <p className="text-gray-400">Manage your subscription tiers</p>
+            <div 
+              className="rounded-xl p-6"
+              style={{
+                background: 'var(--bg-card)',
+                border: '1px solid var(--border-subtle)',
+                boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+              }}
+            >
+              <h3 
+                className="text-xl font-semibold mb-2"
+                style={{ color: 'var(--text-primary)' }}
+              >
+                Resources
+              </h3>
+              <p style={{ color: 'var(--text-secondary)' }}>
+                Explore helpful resources and tools
+              </p>
             </div>
           </div>
         </div>
