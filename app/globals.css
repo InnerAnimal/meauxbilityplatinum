@@ -3,9 +3,76 @@
 @tailwind utilities;
 
 :root {
+  /* Brand Colors */
+  --brand-teal: #5F9C9E;
+  --brand-teal-light: #7DB8BA;
+  --brand-teal-dark: #4A7D7F;
+  --brand-teal-glow: rgba(95, 156, 158, 0.3);
+  
+  /* Dark Charcoal - Background & Base */
+  --charcoal-deep: #1A1D23;
+  --charcoal-base: #22252B;
+  --charcoal-light: #2C3038;
+  --charcoal-lighter: #363A42;
+  
+  /* Light Accents */
+  --beige-light: #E8DDD0;
+  --cream: #F5F1EC;
+  --white-soft: #FAFAF8;
+  
+  /* UI Colors */
+  --bg-primary: #1A1D23;
+  --bg-secondary: #22252B;
+  --bg-elevated: #2C3038;
+  --bg-card: #22252B;
+  
+  /* Text */
+  --text-primary: #FAFAF8;
+  --text-secondary: #B8BCC4;
+  --text-muted: #6B7280;
+  --text-inverse: #1A1D23;
+  
+  /* Borders & Dividers */
+  --border-subtle: #363A42;
+  --border-medium: #4A4E56;
+  --border-accent: #5F9C9E;
+  
+  /* Shadows for Neumorphism */
+  --shadow-emboss-light: rgba(255, 255, 255, 0.08);
+  --shadow-emboss-dark: rgba(0, 0, 0, 0.5);
+  --shadow-deboss-light: rgba(255, 255, 255, 0.03);
+  --shadow-deboss-dark: rgba(0, 0, 0, 0.7);
+  
+  /* Interactive States */
+  --interactive-hover: #7DB8BA;
+  --interactive-active: #4A7D7F;
+  --interactive-disabled: #363A42;
+
+  /* Legacy */
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 26, 29, 35;
   --background-end-rgb: 17, 24, 39;
+}
+
+/* Light theme overrides */
+:root[data-theme="light"] {
+  --bg-primary: #FAFAF8;
+  --bg-secondary: #F5F1EC;
+  --bg-elevated: #E8DDD0;
+  --bg-card: #FFFFFF;
+  
+  --text-primary: #1A1D23;
+  --text-secondary: #4A4E56;
+  --text-muted: #6B7280;
+  --text-inverse: #FAFAF8;
+  
+  --border-subtle: #E8DDD0;
+  --border-medium: #B8BCC4;
+  
+  --shadow-emboss-light: rgba(0, 0, 0, 0.08);
+  --shadow-emboss-dark: rgba(255, 255, 255, 0.5);
+  --shadow-deboss-light: rgba(0, 0, 0, 0.03);
+  --shadow-deboss-dark: rgba(255, 255, 255, 0.7);
 }
 
 body {
